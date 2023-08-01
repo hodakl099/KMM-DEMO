@@ -35,10 +35,10 @@ kotlin {
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
                 implementation("media.kamel:kamel-image:0.7.1")
-                implementation("io.ktor:ktor-client-core:2.3.2")
+                implementation("io.ktor:ktor-client-core:2.3.1")
+                implementation("io.ktor:ktor-client-content-negotiation:2.3.1")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.1")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
-                implementation("io.ktor:ktor-server-content-negotiation:2.3.2")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.2")
             }
         }
         val androidMain by getting {
